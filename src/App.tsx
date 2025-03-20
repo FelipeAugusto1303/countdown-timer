@@ -37,7 +37,8 @@ function App() {
 	return (
 		<>
 			<div id="firework-container"></div>
-			<h2>Contagem Regressiva para o fim do SIFEX 🔥</h2>
+			{!countDown.done && <h2>Contagem Regressiva para o fim do SIFEX 🔥</h2>}
+			{countDown.done && <h2>Bem amigos... Acabou 👋</h2>}
 			<div className="countdown-container">
 				<div>
 					<Paper>{countDown.days.toString().padStart(2, "0")[0]}</Paper>
