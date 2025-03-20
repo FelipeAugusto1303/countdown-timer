@@ -1,5 +1,4 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -22,6 +21,13 @@ h2 {
   gap: 1rem;
 }
 
+.countdown-container div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 #firework-container{
   position: absolute;
   top: 0;
@@ -30,6 +36,19 @@ h2 {
   height: 90vh;
 }
 
-.days-text {
-  margin-right: 0.85em;
+@media (max-width: 850px) {
+  h2{
+    font-size: 0.85rem;
+  }
+  .countdown-container {
+    flex-direction: column;
+  }
+
+  .countdown-container div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
 }

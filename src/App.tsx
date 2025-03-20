@@ -37,19 +37,25 @@ function App() {
 	return (
 		<>
 			<div id="firework-container"></div>
-			<h2>Contagem Regressiva para o fim do SIFEX</h2>
+			<h2>Contagem Regressiva para o fim do SIFEX 🔥</h2>
 			<div className="countdown-container">
-				<Paper>{countDown.days.toString().padStart(2, "0")[0]}</Paper>
-				<Paper>{countDown.days.toString().padStart(2, "0")[1]}</Paper>
-				<span className="days-text">D</span>
-				<Paper>{countDown.hours.toString().padStart(2, "0")[0]}</Paper>
-				<Paper>{countDown.hours.toString().padStart(2, "0")[1]}</Paper>
-				<span>:</span>
-				<Paper>{countDown.minutes.toString().padStart(2, "0")[0]}</Paper>
-				<Paper>{countDown.minutes.toString().padStart(2, "0")[1]}</Paper>
-				<span>:</span>
-				<Paper>{countDown.seconds.toString().padStart(2, "0")[0]}</Paper>
-				<Paper>{countDown.seconds.toString().padStart(2, "0")[1]}</Paper>
+				<div>
+					<Paper>{countDown.days.toString().padStart(2, "0")[0]}</Paper>
+					<Paper>{countDown.days.toString().padStart(2, "0")[1]}</Paper>
+					<span className="days-text">D</span>
+				</div>
+				<div>
+					<Paper>{countDown.hours.toString().padStart(2, "0")[0]}</Paper>
+					<Paper>{countDown.hours.toString().padStart(2, "0")[1]}</Paper>
+					<span>H</span>
+				</div>
+				<div>
+					<Paper>{countDown.minutes.toString().padStart(2, "0")[0]}</Paper>
+					<Paper>{countDown.minutes.toString().padStart(2, "0")[1]}</Paper>
+					<span>:</span>
+					<Paper>{countDown.seconds.toString().padStart(2, "0")[0]}</Paper>
+					<Paper>{countDown.seconds.toString().padStart(2, "0")[1]}</Paper>
+				</div>
 			</div>
 		</>
 	);

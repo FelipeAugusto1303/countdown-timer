@@ -14,3 +14,15 @@ span {
     width: 4.75em;
     border-radius: 20px;
 }
+
+@media (max-width: 850px) {
+    .paper-container {
+        height: 3.25em;
+        width: 2.75em;
+        border-radius: 12px;
+    }
+    span {
+        font-size: 1.2em;
+
+    }
+}
